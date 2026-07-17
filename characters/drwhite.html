@@ -40,22 +40,22 @@ body{
 }
 
 .image{
+.image{
 
     width:250px;
     height:320px;
 
-    border:2px dashed gray;
+    object-fit:contain;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    border:2px solid #666;
 
-    color:gray;
-    font-size:20px;
+    border-radius:8px;
 
-    margin:auto;
+    background:white;
 
-}
+    padding:10px;
+
+    }
 
 .info{
     flex:1;
@@ -192,11 +192,7 @@ text-align:center;
 
 <div class="card">
 
-<div class="image">
-
-Imagem da Personagem
-
-</div>
+<img src="../images/drwhite.png" class="image" alt="Dra.White">
 
 <div class="info">
 
