@@ -26,25 +26,23 @@ body{
     margin-bottom:30px;
 }
 
-.header h1{
-    margin-bottom:5px;
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+
+    background:white;
+
+    border:2px solid #666;
+    border-radius:10px;
+
+    padding:20px;
 }
 
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.image{
 
-    background: white;
-    border: 2px solid #666;
-    border-radius: 10px;
-    padding: 20px;
-    }
-
-.image {
-    margin: auto;
-    width:200px;
-    height:250px;
+    width:250px;
+    height:320px;
 
     border:2px dashed gray;
 
@@ -53,14 +51,15 @@ body{
     justify-content:center;
 
     color:gray;
-
     font-size:20px;
+
+    margin:auto;
 
 }
 
-.info {
-    flex: 1;
-    min-width: 250px;
+.info{
+    flex:1;
+    min-width:260px;
 }
 
 .title{
@@ -105,12 +104,6 @@ td:first-child{
 
 }
 
-.section h2{
-
-    margin-top:0;
-
-}
-
 .dialogues{
 
     border:2px solid #666;
@@ -128,8 +121,6 @@ td:first-child{
     font-family:Consolas,monospace;
 
     line-height:1.8;
-
-    overflow-y:auto;
 
 }
 
@@ -158,6 +149,29 @@ td:first-child{
 .back:hover{
 
     background:#ececec;
+
+}
+
+@media (max-width:700px){
+
+.card{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.info{
+
+width:100%;
+
+}
+
+.title{
+
+text-align:center;
+
+}
 
 }
 
@@ -237,8 +251,7 @@ Imagem do Personagem
 
 <p>
 
-Bladz é um lobo de pelagem cinza, olhos grandes e cansados e expressão reservada.
-Utiliza uma blusa de frio amarela com detalhes mais escuros na barra e calças marrons.
+Bladz é um lobo de pelagem cinza, olhos grandes e cansados e expressão reservada. Usa uma blusa de frio amarela com detalhes mais escuros na barra, além de calças marrons. Sua aparência costuma transmitir cansaço, mas também dedicação ao trabalho.
 
 </p>
 
@@ -250,13 +263,13 @@ Utiliza uma blusa de frio amarela com detalhes mais escuros na barra e calças m
 
 <ul>
 
-<li>Conserta câmeras.</li>
+<li>Conserta câmeras danificadas.</li>
 
-<li>Repara equipamentos danificados.</li>
+<li>Repara equipamentos quebrados.</li>
 
-<li>Realiza manutenção do hospital.</li>
+<li>Realiza manutenção geral do hospital.</li>
 
-<li>Ajuda funcionários quando solicitado.</li>
+<li>Ajuda outros funcionários quando solicitado.</li>
 
 </ul>
 
@@ -268,11 +281,11 @@ Utiliza uma blusa de frio amarela com detalhes mais escuros na barra e calças m
 
 <p>
 
-Bladz é um estagiário responsável pela manutenção do hospital.
-Apesar de trabalhar diariamente com equipamentos e corredores do prédio,
-ele evita contato com funcionários da Animal Research Facility após um conselho do Dr. Fazzy.
+Bladz é um estagiário de manutenção do Animal Hospital. Apesar de ainda estar aprendendo, é considerado bastante competente pelo Dr. Fazzy.
 
-Ao final de cada turno, costuma sair do hospital para visitar a cafeteria antes de retornar ao trabalho.
+Ele não trabalha para a Animal Research Facility e evita qualquer contato com seus funcionários após receber um aviso do Dr. Fazzy.
+
+Ao final de cada turno, Bladz sai do hospital para visitar a cafeteria em frente ao prédio, retornando aproximadamente vinte segundos depois.
 
 </p>
 
@@ -284,17 +297,19 @@ Ao final de cada turno, costuma sair do hospital para visitar a cafeteria antes 
 
 <div class="dialogues">
 
-"And... its fixed!"
+"I think I managed to fix this thing."
 
-"It seems like i fixed it!"
+"Huh...?"
 
-"I think I managed to fix this thing..."
+"Who is tha—"
 
-"Okay... it should be fixed"
+"D-Did... did you see that... THING too...?"
 
-"These cameras keep breaking!"
+"Hey Mrs. White!"
 
-"How many times did i fix those cameras?"
+"Feeling good!"
+
+"How about you?"
 
 </div>
 
@@ -306,4 +321,4 @@ Ao final de cada turno, costuma sair do hospital para visitar a cafeteria antes 
 
 </body>
 
-  </html>
+</html>
